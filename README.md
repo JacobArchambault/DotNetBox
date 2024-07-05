@@ -17,7 +17,7 @@ This project creates a Fedora toolbox with VSCodium - the open-source version of
 ## How do I run this? 
 To create the toolbox, simply open a terminal, `cd` into the root directory for this project and run `bash build.sh`. 
 
-Once the script has completed, you can run `toolbox enter codiumbox` to enter into the development environment. To open codium, you can then just type `codium` into the terminal, or `codium \path\to\your\directory` to open codium in a particular location.
+Once the script has completed, you can run `toolbox enter dotnetbox` to enter into the development environment. To open codium, you can then just type `codium` into the terminal, or `codium \path\to\your\directory` to open codium in a particular location.
 
 ## Required dependencies
 To run this script, you'll need to have a development environment with bash, Toolbx, and Podman installed. 
