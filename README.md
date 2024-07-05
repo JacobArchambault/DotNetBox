@@ -1,4 +1,4 @@
-# Codium toolbx
+# DotNetBox
 A Dockerfile and shell script for creating a Fedora Toolbx  with VSCodium and the dotnet SDK pre-installed.
 
 ## Primer on Toolbx and containerized development environments
