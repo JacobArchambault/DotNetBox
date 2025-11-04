@@ -1,8 +1,6 @@
 # DotNetBox
 A Dockerfile and shell script for creating a Fedora Toolbx  with the .NET SDK and Kate IDE pre-installed.
 
-## Primer on Toolbx and containerized development environments
-[Toolbx](https://github.com/containers/toolbox/) is a project for building containerized development environments built on OCI compliant technologies including Podman and Buildah. It comes pre-installed on Linux Fedora workstations, and is an integral part of developing on Silverblue, Fedora's atomic desktop variant. 
 
 Traditionally, a developer would simply install whatever applications they need directly onto their laptop. This can lead to several problems: 
 1. Loss of time - Setting up a desktop environment for development takes time: multiple of my past employers have had complex wikis for onboarding new developers that, including troubleshooting, could take days or even weeks to complete before new developers were ready to start work. Much of this setup is tedious work that could be automated. 
@@ -21,6 +19,9 @@ Once the script has completed, you can run `toolbox enter dotnetbox` to enter in
 
 ## Required dependencies
 To run this script, you'll need to have a development environment with bash, Toolbx, and Podman installed. 
+
+## Primer on Toolbx and containerized development environments
+[Toolbx](https://github.com/containers/toolbox/) is a project for building containerized development environments built on OCI compliant technologies including Podman and Buildah. It comes pre-installed on Linux Fedora workstations, and is an integral part of developing on Silverblue, Fedora's atomic desktop variant. 
 
 ## Additional information
 This project builds on information in the following blog post, which does a nice job explaining how to use Podman and Toolbox to build and run custom container images. 
