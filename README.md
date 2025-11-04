@@ -1,8 +1,6 @@
 # DotNetBox
 A Dockerfile and shell script for creating a Fedora Toolbx  with the .NET SDK and Kate IDE pre-installed.
 
-
-
 ## What is this project?
 This project creates a Fedora toolbox with Kate - a lightweight code editor - and the .NET SDK pre-installed. As such, it provides a script to get you up and running with a bare bones development environment for building projects in C# .NET. 
 
@@ -13,6 +11,9 @@ Once the script has completed, you can run `toolbox enter dotnetbox` to enter in
 
 ## Required dependencies
 To run this script, you'll need to have a development environment with bash, Toolbx, and Podman installed. 
+
+## Primer on Kate
+An earlier version of this toolbox used [VSCodium](https://vscodium.com/), a free/libre open-source version of Microsoft's Visual Studio code with Microsoft's telemetry and proprietary components removed. The resulting toolbox, however, ran sluggishly on more lightweight laptops, causing running applications to frequently freeze. Kate is much more lightweight - as one indicator, the combined Red Hat Package Manager (rpm) package size for the `kate` and `kate-plugins` projects is around 30 MiB, while that for VSCodium is currently around 150. The resulting toolbox runs much more smoothly, while still including all the basic requirements for a solid IDE experience - a project directory side panel, an integrated terminal, git support, and language server protocol (lsp) integration for C# language development.
 
 ## Primer on Toolbx and containerized development environments
 [Toolbx](https://github.com/containers/toolbox/) is a project for building containerized development environments built on OCI compliant technologies including Podman and Buildah. It comes pre-installed on Linux Fedora workstations, and is an integral part of developing on Silverblue, Fedora's atomic desktop variant. 
