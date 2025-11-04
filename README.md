@@ -1,5 +1,5 @@
 # DotNetBox
-A Dockerfile and shell script for creating a Fedora Toolbx  with VSCodium and the .NET SDK pre-installed.
+A Dockerfile and shell script for creating a Fedora Toolbx  with the .NET SDK and Kate IDE pre-installed.
 
 ## Primer on Toolbx and containerized development environments
 [Toolbx](https://github.com/containers/toolbox/) is a project for building containerized development environments built on OCI compliant technologies including Podman and Buildah. It comes pre-installed on Linux Fedora workstations, and is an integral part of developing on Silverblue, Fedora's atomic desktop variant. 
@@ -12,12 +12,12 @@ Traditionally, a developer would simply install whatever applications they need 
 In contrast with traditional development environments, Toolbx can be used to build and run reproducible, isolated, and portable development environments with a single command. 
 
 ## What is this project?
-This project creates a Fedora toolbox with VSCodium - the open-source version of Visual Studio Code - and the .NET SDK pre-installed. As such, it provides a script to get you up and running with a bare bones development environment for building projects in C# .NET. 
+This project creates a Fedora toolbox with Kate - a lightweight code editor - and the .NET SDK pre-installed. As such, it provides a script to get you up and running with a bare bones development environment for building projects in C# .NET. 
 
 ## How do I run this? 
 To create the toolbox, simply open a terminal, `cd` into the root directory for this project and run `bash build.sh`. 
 
-Once the script has completed, you can run `toolbox enter dotnetbox` to enter into the development environment. To open codium, you can then just type `codium` into the terminal, or `codium \path\to\your\directory` to open codium in a particular location. From there, you can use the [.NET command line interface](https://learn.microsoft.com/en-us/dotnet/core/tools/) to create, build, and run .NET applications
+Once the script has completed, you can run `toolbox enter dotnetbox` to enter into the development environment. To open kate, you can then just type `kate` into the terminal, or `kate \path\to\your\directory` to open kate in a particular location. From there, you can use the [.NET command line interface](https://learn.microsoft.com/en-us/dotnet/core/tools/) to create, build, and run .NET applications
 
 ## Required dependencies
 To run this script, you'll need to have a development environment with bash, Toolbx, and Podman installed. 
